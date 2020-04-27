@@ -1,0 +1,106 @@
+2020-04-27 09:27:49 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 14:42:15 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 14:43:09 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 14:43:36 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 14:46:33 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 14:46:33 [INFO ] [Waits] - [waitforgiventime] waiting for 10000  seconds
+2020-04-27 14:48:27 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 14:48:37 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 14:48:37 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 14:48:40 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 14:49:30 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 14:49:38 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 14:49:39 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 14:49:40 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 16:37:51 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 16:37:51 [INFO ] [Waits] - [waitforgiventime] waiting for 10000  seconds
+2020-04-27 16:38:48 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 16:38:48 [INFO ] [Waits] - [waitforgiventime] waiting for 520000  seconds
+2020-04-27 17:03:36 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 17:03:52 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 17:03:53 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 17:03:54 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 17:04:11 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 17:04:55 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 17:05:12 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 17:05:20 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 17:05:20 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 17:05:22 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 17:05:39 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 17:09:08 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 17:09:16 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 17:09:16 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 17:09:18 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 17:09:37 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 17:12:03 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 17:12:11 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 17:12:12 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 17:12:13 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 17:12:32 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 18:09:57 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 18:10:05 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 18:10:06 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 18:10:07 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 18:10:24 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 18:10:31 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 18:15:55 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 18:16:31 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 18:18:45 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 18:22:49 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 18:23:57 [INFO ] [testmain] - [mytest] india is grerat
+2020-04-27 18:27:31 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 18:28:07 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 18:28:07 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 18:28:09 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 18:28:26 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 18:28:35 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 18:28:35 [INFO ] [Hooks] - [tearDown] Login to Amazon AppIs Passed
+2020-04-27 18:32:46 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 18:32:55 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 18:32:56 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 18:32:57 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 18:33:16 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 18:33:26 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 18:35:28 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 18:35:35 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 18:35:36 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 18:35:37 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 18:35:55 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 18:36:04 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 18:37:26 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 18:37:33 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 18:37:34 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 18:37:35 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 18:37:54 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 18:38:03 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 18:58:25 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 18:58:33 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 18:58:34 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 18:58:35 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 18:58:54 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 18:59:02 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 19:03:27 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 19:03:35 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 19:03:35 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 19:03:37 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 19:03:55 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 19:04:05 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 19:07:04 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 19:07:12 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 19:07:13 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 19:07:15 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 19:07:33 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 19:07:42 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 19:08:54 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 19:09:04 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 19:09:04 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 19:09:06 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 19:09:24 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 19:09:34 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 19:10:47 [INFO ] [Hooks] - [initialsetup] starting the server code started running
+2020-04-27 19:10:54 [INFO ] [Hooks] - [initialsetup] Server started successfully
+2020-04-27 19:10:55 [INFO ] [LoginStep] - [user_login_to_Amazon_app] clicking on Alreadycutomerbutton
+2020-04-27 19:10:56 [INFO ] [LoginStep] - [user_enter_username_and_password] Entering Username
+2020-04-27 19:11:15 [INFO ] [LoginStep] - [user_enter_username_and_password] Entered Username and Password sucessfully
+2020-04-27 19:11:23 [INFO ] [Hooks] - [tearDown] ------------->End of scenario Login to Amazon App <------------
+2020-04-27 19:11:23 [INFO ] [Hooks] - [tearDown] Login to Amazon AppIs Passed

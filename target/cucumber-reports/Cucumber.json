@@ -1,0 +1,92 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Login to Amazon"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7808704500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initialsetup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login to Amazon App",
+        "description": "",
+        "id": "login-scenario;login-to-amazon-app",
+        "after": [
+          {
+            "result": {
+              "duration": 873100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1691097800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User login to Amazon app",
+            "match": {
+              "location": "LoginStep.user_login_to_Amazon_app()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19059293700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter username and password",
+            "match": {
+              "location": "LoginStep.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8281678300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user navigate to Home page",
+            "match": {
+              "location": "LoginStep.user_navigate_to_Home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Scenario",
+    "description": "",
+    "id": "login-scenario",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/lunch.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@loginTest"
+      }
+    ]
+  }
+]
