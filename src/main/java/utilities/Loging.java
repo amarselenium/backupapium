@@ -8,6 +8,12 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 public class Loging {
+	
+	/**
+	* Author: Amaresh
+	*
+	* Log4j Implemention for logging purpose
+	*/
 
 	private static boolean root = false;
 	static PropertyReader applicationproperties = new PropertyReader("\\src\\main\\resources\\Application.properties");

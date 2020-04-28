@@ -12,6 +12,12 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
 public class Waits {
+	/**
+	 * Author: Amaresh
+	 *
+	 * Wait methods for application synchronization
+	 *
+	 */
 
 	private static Logger Log = Loging.getLogger(Waits.class);
 

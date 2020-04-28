@@ -8,6 +8,12 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class Login {
+	/**
+	* Author: Amaresh
+	*
+	* pagefactory for Login page
+	*
+	*/
 
 	public Login(AndroidDriver<AndroidElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
@@ -28,7 +34,7 @@ public class Login {
 	@AndroidFindBy(id = "signInSubmit")
 	private AndroidElement Submitbutton;
 	
-
+	
 	
 
 	public AndroidElement alreadycutomerbutton() {

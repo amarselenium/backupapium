@@ -14,10 +14,19 @@ import org.testng.Assert;
 import org.testng.asserts.*;
 import pageObjects.Home;
 import pageObjects.Login;
+import utilities.ExcelfileReader;
 import utilities.Loging;
 import utilities.PropertyReader;
 
 public class LoginStep {
+	
+	
+	/**
+	 * Author: Amaresh
+	 *
+	 * Login scenario
+	 *
+	 */
 
 	Login login = new Login(DriverManagement.driver);
 	Home home= new Home(DriverManagement.driver);
@@ -30,13 +39,13 @@ public class LoginStep {
 		login.alreadycutomerbutton().click();
 	}
 
-	//Entering Username and Password
+	//Entering Username and Password from external excel file
 	@When("^User enter username and password$")
 	public void user_enter_username_and_password() throws Throwable {
 		Log.info("Entering Username");
-		login.loginemailid().sendKeys(PropertyReader.Testproperties.getObjectpropertyValue("username"));
+		login.loginemailid().sendKeys(ExcelfileReader.excelreader(PropertyReader.Applicationproperties.getObjectpropertyValue("Logincredentialspath"), PropertyReader.Applicationproperties.getObjectpropertyValue("sheetname"),"username"));
 		login.continuebutton().click();
-		login.loginpassword().sendKeys(PropertyReader.Testproperties.getObjectpropertyValue("password"));
+		login.loginpassword().sendKeys(ExcelfileReader.excelreader(PropertyReader.Applicationproperties.getObjectpropertyValue("Logincredentialspath"), PropertyReader.Applicationproperties.getObjectpropertyValue("sheetname"),"password"));
 		login.Submitbutton().click();
 		Log.info("Entered Username and Password sucessfully");
 	}

@@ -11,9 +11,17 @@ import io.appium.java_client.android.AndroidElement;
 import utilities.PropertyReader;
 
 public class DriverManagement {
+	
+	/**
+	* Author: Amaresh
+	*
+	* Check the device and start accordingly
+	*
+	*/
+	
 	public static AndroidDriver<AndroidElement> driver;
 	static DesiredCapabilities cap = new DesiredCapabilities();
-
+//code for emulator
 	public static  AndroidDriver<AndroidElement> startmachine(String machine) throws IOException, InterruptedException {
 		
 		if (machine.contains("emulator")) {
@@ -26,6 +34,8 @@ public class DriverManagement {
 			cap.setCapability("app", "F:\\NewWorkspace\\Amazone\\src\\main\\resources\\Amazon_Shopping.apk");
 			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 			return driver;
+			
+//code for realdevice
 		} else {
 
 			cap.setCapability("deviceName", "Android Device");

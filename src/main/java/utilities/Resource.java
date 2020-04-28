@@ -5,6 +5,13 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 public class Resource {
+	/**
+	 * Author: Amaresh
+	 *
+	 * Reading resouece path
+	 *
+	 */
+	
 	public static String getResourcePath(String resource) {
 		String path = getBaseResourcePath() + resource;
 		return path;

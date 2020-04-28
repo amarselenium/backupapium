@@ -1,73 +1,76 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Features/lunch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Features/Rotateandresolution.feature");
 formatter.feature({
   "comments": [
     {
-      "line": 1,
+      "line": 2,
       "value": "#Login to Amazon"
     }
   ],
-  "line": 3,
+  "line": 4,
   "name": "Login Scenario",
   "description": "",
   "id": "login-scenario",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 2,
+      "line": 3,
       "name": "@loginTest"
     }
   ]
 });
 formatter.before({
-  "duration": 7808704500,
+  "duration": 8514806000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 5,
-  "name": "Login to Amazon App",
+  "line": 6,
+  "name": "change screen resolution and screen rotation",
   "description": "",
-  "id": "login-scenario;login-to-amazon-app",
+  "id": "login-scenario;change-screen-resolution-and-screen-rotation",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "User login to Amazon app",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "User enter username and password",
+  "line": 8,
+  "name": "rotate the screen",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "user navigate to Home page",
+  "line": 9,
+  "name": "reolution changed",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "screen rotated and resolution changed",
   "keyword": "Then "
 });
 formatter.match({
   "location": "LoginStep.user_login_to_Amazon_app()"
 });
 formatter.result({
-  "duration": 1691097800,
+  "duration": 2787210800,
   "status": "passed"
 });
-formatter.match({
-  "location": "LoginStep.user_enter_username_and_password()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 19059293700,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "LoginStep.user_navigate_to_Home_page()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 8281678300,
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.after({
-  "duration": 873100,
+  "duration": 5991600,
   "status": "passed"
 });
 });

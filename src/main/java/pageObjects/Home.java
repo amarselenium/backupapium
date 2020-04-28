@@ -8,6 +8,12 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class Home {
+	/**
+	* Author: Amaresh
+	*
+	* pagefactory for Home page
+	*
+	*/
 
 	public Home(AndroidDriver<AndroidElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);

@@ -16,8 +16,16 @@ import utilities.PropertyReader;
 import utilities.Screenshot;
 
 public class Hooks {
+	/**
+	 * Author: Amaresh
+	 *
+	 * Hook methods run before and after every scenario
+	 *
+	 */
+
 	private Logger Log = Loging.getLogger(Hooks.class);
 
+	// *Before Every scenario*
 	@Before
 	public void initialsetup() throws InterruptedException, IOException {
 		Log.info("starting the server code started running");
@@ -29,7 +37,7 @@ public class Hooks {
 		// login.alreadycutomerbutton().click();
 		Log.info("Server started successfully");
 	}
-
+//*After Every Scenario*
 	@After()
 	public void tearDown(Scenario scenario) throws IOException {
 		Log.info("------------->End of scenario " + scenario.getName() + " <------------");
@@ -37,14 +45,13 @@ public class Hooks {
 		if (scenario.isFailed()) {
 			Screenshot.getScreenshot(scenario.getName());
 
-		}
-		else {
+		} else {
 			Log.info(scenario.getName() + "Is Passed");
 		}
 
 		Log.info("Fetching HTML Reports");
 		Runtime.getRuntime().exec(PropertyReader.Applicationproperties.getproperty("reportpath"));
-		
+
 	}
 
 }

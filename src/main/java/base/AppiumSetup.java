@@ -8,6 +8,14 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class AppiumSetup {
+	
+	/**
+	* Author: Amaresh
+	*
+	* Start npm and appium server
+	*
+	*/
+	
 	public static AppiumDriverLocalService service;
 	public static AndroidDriver<AndroidElement> driver;
 
