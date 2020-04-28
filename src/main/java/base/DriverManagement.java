@@ -26,25 +26,25 @@ public class DriverManagement {
 		
 		if (machine.contains("emulator")) {
 			AppiumSetup.startEmulator();
-			cap.setCapability("deviceName", "Android Device");
-			cap.setCapability("udid", "9e15a79b"); // Give Device ID of your
+			cap.setCapability("deviceName", PropertyReader.Applicationproperties.getObjectpropertyValue("devicename"));
+			cap.setCapability("udid", PropertyReader.Applicationproperties.getObjectpropertyValue("emulator")); // Give Device ID of your
 													// mobile phone
-			cap.setCapability("platformName", "Android");
+			cap.setCapability("platformName", PropertyReader.Applicationproperties.getObjectpropertyValue("platformName"));
 			cap.setCapability("automationName", "UiAutomator1");
-			cap.setCapability("app", "F:\\NewWorkspace\\Amazone\\src\\main\\resources\\Amazon_Shopping.apk");
-			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+			cap.setCapability("app", PropertyReader.Applicationproperties.getproperty("Apkpath"));
+			driver = new AndroidDriver<AndroidElement>(new URL(PropertyReader.Applicationproperties.getObjectpropertyValue("huburl")), cap);
 			return driver;
 			
 //code for realdevice
 		} else {
 
-			cap.setCapability("deviceName", "Android Device");
-			cap.setCapability("udid", "9e15a79b"); // Give Device ID of your
+			cap.setCapability("deviceName", PropertyReader.Applicationproperties.getObjectpropertyValue("devicename"));
+			cap.setCapability("udid", PropertyReader.Applicationproperties.getObjectpropertyValue("Realdevice")); // Give Device ID of your
 													// mobile phone
-			cap.setCapability("platformName", "Android");
+			cap.setCapability("platformName", PropertyReader.Applicationproperties.getObjectpropertyValue("platformName"));
 			cap.setCapability("automationName", "UiAutomator1");
-			cap.setCapability("app", "F:\\NewWorkspace\\Amazone\\src\\main\\resources\\Amazon_Shopping.apk");
-			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+			cap.setCapability("app", PropertyReader.Applicationproperties.getproperty("Apkpath"));
+			driver = new AndroidDriver<AndroidElement>(new URL(PropertyReader.Applicationproperties.getObjectpropertyValue("huburl")), cap);
 			return driver;
 		}
 

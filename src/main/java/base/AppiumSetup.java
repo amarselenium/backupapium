@@ -6,6 +6,7 @@ import java.net.ServerSocket;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
+import utilities.Waits;
 
 public class AppiumSetup {
 	
@@ -51,7 +52,7 @@ public class AppiumSetup {
 	public static void startEmulator() throws IOException, InterruptedException {
 
 		Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\startEmulator.bat");
-		Thread.sleep(6000);
+		Waits.waitforgiventime(30);
 	}
 
 }

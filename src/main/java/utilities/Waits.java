@@ -21,22 +21,22 @@ public class Waits {
 
 	private static Logger Log = Loging.getLogger(Waits.class);
 
-	public static void waitforgiventime(int time) throws MalformedURLException {
+	public static void waitforgiventime(int time)  throws InterruptedException
+	{
 
 		Log.info("waiting for " + time + "  seconds");
 		DriverManagement.driver.manage().timeouts().implicitlyWait(time, TimeUnit.MILLISECONDS);
-		
+
 	}
 
 	// Explicit Wait
-	public void waitForGivenElement(int time, AndroidElement androidElement) {
-		try {
+	public void waitForGivenElement(int time, AndroidElement androidElement)throws InterruptedException{
+		
 			Log.info("waiting till next element is visible");
 			WebDriverWait wait = new WebDriverWait(DriverManagement.driver, time);
 			wait.until(ExpectedConditions.visibilityOf(androidElement));
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+		} 
+			
+		
 
 	}
-}

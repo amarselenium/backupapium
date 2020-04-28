@@ -17,6 +17,7 @@ import pageObjects.Login;
 import utilities.ExcelfileReader;
 import utilities.Loging;
 import utilities.PropertyReader;
+import utilities.Waits;
 
 public class LoginStep {
 	
@@ -53,7 +54,7 @@ public class LoginStep {
 	//Verifying Login has done successully and check the homepagescreen
 	@Then("^user navigate to Home page$")
 	public void user_navigate_to_Home_page() throws Throwable {
-		Thread.sleep(5000);
+		Waits.waitforgiventime(10);
 		boolean displayed = home.category().isDisplayed();
 		System.out.println(displayed);
 		System.out.println(home.category().getText().replaceAll("\\s", ""));

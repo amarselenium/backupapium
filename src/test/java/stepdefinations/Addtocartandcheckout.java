@@ -22,7 +22,7 @@ public class Addtocartandcheckout {
 	Addtocart addtcart = new Addtocart(DriverManagement.driver);
 
 	@Given("^User already search the product$")
-	public void user_already_search_the_product() throws Throwable {
+	public void user_already_search_the_product()  {
 		Log.info("verifying search result page");
 
 		if (addtcart.ProductResult().isDisplayed()) {

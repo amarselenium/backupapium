@@ -1,7 +1,8 @@
 package stepdefinations;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
+import org.openqa.selenium.NoSuchElementException;
 
 import base.DriverManagement;
 import cucumber.api.java.en.Given;
@@ -16,7 +17,7 @@ import utilities.PropertyReader;
 import utilities.Waits;
 
 public class SearchProduct {
-	
+
 	/**
 	 * Author: Amaresh
 	 *
@@ -29,37 +30,46 @@ public class SearchProduct {
 	Login login = new Login(DriverManagement.driver);
 
 	@Given("^User already login to Amazon app$")
-	public void user_already_login_to_Amazon_app() throws Throwable {
+	public void user_already_login_to_Amazon_app() {
 		try {
 
 			if (homepage.category().isDisplayed())
 				Log.info("User already log into an application");
+			else {
+				Waits.waitforgiventime(30);
+				Log.info("User is log into application");
+				if (login.alreadycutomerbutton().isDisplayed()) {
+					login.alreadycutomerbutton().click();
+				}
+				Waits.waitforgiventime(30);
+				Log.info("Enter UserName and Password into application");
 
-		}
+				// Enter Username
+				Waits.waitforgiventime(15);
+				login.loginemailid().sendKeys(PropertyReader.Testproperties.getObjectpropertyValue("username"));
+				login.continuebutton().click();
+				Waits.waitforgiventime(10);
+				login.loginpassword().clear();
+				login.loginpassword().sendKeys(PropertyReader.Testproperties.getObjectpropertyValue("password"));
+				login.Submitbutton().click();
+				Waits.waitforgiventime(10);
 
-		catch (Exception e) {
-
-			Waits.waitforgiventime(30);
-			Log.info("User is log into application");
-			if (login.alreadycutomerbutton().isDisplayed()) {
-				login.alreadycutomerbutton().click();
+				Log.info("User log in into application Sucessfully");
 			}
-			Waits.waitforgiventime(30);
-			Log.info("Enter UserName and Password into application");
 
-			// Enter Username
-			Waits.waitforgiventime(15);
-			login.loginemailid().sendKeys(PropertyReader.Testproperties.getObjectpropertyValue("username"));
-			login.continuebutton().click();
-			Waits.waitforgiventime(10);
-			login.loginpassword().clear();
-			login.loginpassword().sendKeys(PropertyReader.Testproperties.getObjectpropertyValue("password"));
-			login.Submitbutton().click();
-			Waits.waitforgiventime(10);
-
-			Log.info("User log in into application Sucessfully");
 		}
+
+		catch (InterruptedException e) {
+			Log.error("Element is not loading on the given time");
+		} catch (ElementNotVisibleException e) {
+			Log.error("Element is not present on the page");
+		} catch (NoSuchElementException e) {
+			Log.error("locator value is incorrect");
+		}
+
 	}
+
+	
 
 	// Entering input to the search Textbox
 
@@ -84,12 +94,13 @@ public class SearchProduct {
 		Navigation.EnterKey();
 
 	}
-    //Assetion for the product detail page
+
+	// Assetion for the product detail page
 	@Then("^check User is in Product detail page$")
 	public void check_User_is_in_Product_detail_page() throws Throwable {
 		Log.debug("Verifying on the productdetails page");
-		boolean Isproductpagedisplayed = productpage.Productdetailpage().isDisplayed();
-		Assert.assertEquals(true, Isproductpagedisplayed);
+		//boolean Isproductpagedisplayed = productpage.Productdetailpage().isDisplayed();
+		Assert.assertEquals(true, productpage.Productdetailpage().isDisplayed());
 
 	}
 
