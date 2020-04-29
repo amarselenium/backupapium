@@ -61,15 +61,18 @@ public class SearchProduct {
 
 		catch (InterruptedException e) {
 			Log.error("Element is not loading on the given time");
-		} catch (ElementNotVisibleException e) {
+			e.printStackTrace();
+		}
+		catch (ElementNotVisibleException e) {
+			e.printStackTrace();
 			Log.error("Element is not present on the page");
-		} catch (NoSuchElementException e) {
+		} 
+		catch (NoSuchElementException e) {
+			e.printStackTrace();
 			Log.error("locator value is incorrect");
 		}
 
 	}
-
-	
 
 	// Entering input to the search Textbox
 
@@ -99,7 +102,8 @@ public class SearchProduct {
 	@Then("^check User is in Product detail page$")
 	public void check_User_is_in_Product_detail_page() throws Throwable {
 		Log.debug("Verifying on the productdetails page");
-		//boolean Isproductpagedisplayed = productpage.Productdetailpage().isDisplayed();
+		// boolean Isproductpagedisplayed =
+		// productpage.Productdetailpage().isDisplayed();
 		Assert.assertEquals(true, productpage.Productdetailpage().isDisplayed());
 
 	}
